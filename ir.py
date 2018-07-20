@@ -14,8 +14,8 @@ def stopStream():
     print("Stream Stopped")
 
 while True:
-    #If input is equal to 1 then the beam is not broken so car is in drive gear
-    #if input is equal to 0 then the beam is broken so car is in reverse gear
+    #If input is equal to 1 then the beam is not broken
+    #if input is equal to 0 then the beam is broken
     if(GPIO.input(2) ==1):
         print("Drive")
         time.sleep(1)
